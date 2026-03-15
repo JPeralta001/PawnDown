@@ -1,3 +1,24 @@
+  :root{
+    --color-primary: #8C2B2B;          /* antes #296159 */
+    --color-primary-dark: #732020;     /* antes #1d4a44 */
+    --color-primary-light: #E57373;    /* antes #3a7d73 */
+    --color-background: #fdf2f2;       /* antes #f5f5f2 */
+    --color-white: #ffffff;
+    --color-black: #1a1a1a;
+    --color-text: #333333;
+    --color-text-light: #666666;
+    --color-border: #e0e0e0;
+    --color-accent: #f7f7f7;           /* antes #d0985d */
+    --font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-full: 9999px;
+    --transition: all 0.3s ease;
+   }
    * {
       margin: 0;
       padding: 0;
@@ -111,7 +132,7 @@
 
     .nav-links a:hover,
     .nav-links a.active {
-      color: #296159;
+      color: #A83232;
     }
 
     .hamburger {
@@ -131,7 +152,7 @@
 
     /* Page Header */
     .page-header {
-      background: #296159;
+      background: #8C2B2B;
       padding: 80px 20px;
       text-align: center;
       margin-bottom: 50px;
@@ -191,7 +212,7 @@
     }
 
     .search-input:focus {
-      border-color: #296159;
+      border-color: #8C2B2B;
     }
 
     .search-input::placeholder {
@@ -222,12 +243,12 @@
     }
 
     .btn-secondary {
-      background: #296159;
+      background: #8C2B2B; /* antes #296159 */
       color: #fff;
     }
 
     .btn-secondary:hover {
-      background: #1e4a44;
+      background: #732020;
     }
 
     /* Result Card */
@@ -235,7 +256,7 @@
       display: none;
       margin-top: 25px;
       padding: 25px;
-      background: linear-gradient(135deg, #296159 0%, #1e4a44 100%);
+      background: linear-gradient(135deg, #8C2B2B 0%, #732020 100%);
       border-radius: 15px;
       color: #fff;
     }
@@ -339,8 +360,8 @@
 
     .filter-btn:hover,
     .filter-btn.active {
-      border-color: #296159;
-      background: #296159;
+      border-color: #8C2B2B;
+      background: #8C2B2B;
       color: #fff;
     }
 
@@ -357,7 +378,7 @@
     }
 
     .ranking-table thead {
-      background: #296159;
+      background: #8C2B2B;
       color: #fff;
     }
 
@@ -437,7 +458,7 @@
     .player-avatar {
       width: 40px;
       height: 40px;
-      background: linear-gradient(135deg, #296159 0%, #1e4a44 100%);
+      background: linear-gradient(135deg, #8C2B2B 0%, #732020 100%); /* antes #296159 → #1e4a44 */
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -459,7 +480,7 @@
     .elo-badge {
       display: inline-block;
       padding: 6px 14px;
-      background: #296159;
+      background: #8C2B2B;
       color: #fff;
       border-radius: 20px;
       font-weight: 600;
@@ -475,22 +496,55 @@
     .draw { color: #ffc107; font-weight: 600; }
 
     /* Footer */
-    .footer {
-      background: #296159;
-      padding: 40px 20px;
-      text-align: center;
-    }
+.footer {
+    background-color: var(--color-primary);
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
 
-    .footer-copyright {
-      color: #fff;
-      font-size: 14px;
-    }
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-    .footer a {
-      color: #fff;
-      text-decoration: underline;
-    }
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
 
+.social-link {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+    border-radius: var(--radius-full);
+    color: var(--color-black);
+    transition: var(--transition);
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.social-link svg {
+    width: 24px;
+    height: 24px;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 0.9rem;
+
+}
+.footer-copyright{
+  color: #ffffff;
+  font-size: 0.9rem;
+}
     /* Mobile Menu */
     .mobile-menu {
       display: none;

@@ -81,6 +81,8 @@ var events = [
         location: "Centro de Convenciones Ensenada"
     }
 ];
+
+
 // State
 var currentDate = new Date();
 var currentMonth = currentDate.getMonth();
@@ -102,6 +104,13 @@ var monthNames = [
     'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
     'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
 ];
+
+function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('active');
+    document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
+}
+
 // Helper functions
 function getDaysInMonth(year, month) {
     return new Date(year, month + 1, 0).getDate();

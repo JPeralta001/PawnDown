@@ -155,6 +155,13 @@ var categoryNames = {
     'premiaciones': 'Premiaciones',
     'talleres': 'Talleres'
 };
+
+function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('active');
+    document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
+}
+
 // Render gallery
 function renderGallery() {
     // Filter images based on current filter
