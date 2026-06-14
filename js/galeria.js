@@ -1,14 +1,14 @@
 // Gallery images data - Using Unsplash chess-related images
 var galleryImages = [
-    {
+    /*{
         id: 1,
         src: "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=800&q=80",
-        title: "Torneo Apertura 2025",
-        description: "Partida final del torneo de apertura en el Centro Cultural Riviera.",
+        title: "Torneo Apertura 2026",
+        description: ".",
         category: "torneos",
         date: "15 de Enero, 2025"
-    },
-    {
+    },*/
+    /*{
         id: 2,
         src: "https://images.unsplash.com/photo-1560174038-da43ac74f01b?w=800&q=80",
         title: "Concentración Total",
@@ -127,7 +127,7 @@ var galleryImages = [
         description: "Segunda edición del torneo estival en Ensenada.",
         category: "torneos",
         date: "25 de Agosto, 2025"
-    }
+    }*/
 ];
 // State
 var currentFilter = 'all';

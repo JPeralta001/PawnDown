@@ -1,9 +1,9 @@
 
     // Tournament participants data
     const participants = [
-      { id: 1, name: "Carlos Martinez", club: "Club Tijuana", elo: 2150, points: 8.5, games:5.0},
-      { id: 2, name: "Miguel Angel Rodriguez", club: "Club Mexicali", elo: 2080, points: 8.0, games:5.0},
-      { id: 3, name: "Juan Dominguez", club: "Club Ensenada", elo: 1850, points: 7.5, games:5.0},
+      { id: 1, name: "Jose Peralta", club: "Club PawnDown", elo: 2150, points: 8.5, games:5.0},
+      { id: 2, name: "Isai Alvarez", club: "Club PawnDown", elo: 2080, points: 8.0, games:5.0},
+      /*{ id: 3, name: "Juan Dominguez", club: "Club Ensenada", elo: 1850, points: 7.5, games:5.0},
       { id: 4, name: "Roberto Sanchez", club: "Club Tijuana", elo: 1920, points: 7.0, games:5.0},
       { id: 5, name: "Fernando Lopez", club: "Club Ensenada", elo: 1780, points: 6.5, games:5.0},
       { id: 6, name: "Alejandro Hernandez", club: "Club Rosarito", elo: 1850, points: 6.0, games:5.0},
@@ -24,7 +24,7 @@
       { id: 21, name: "Victor Navarro", club: "Club Ensenada", elo: 1350, points: 2.0, games:5.0},
       { id: 22, name: "Hugo Espinoza", club: "Club Tijuana", elo: 1320, points: 15.5, games:5.0},
       { id: 23, name: "Martin Aguilar", club: "Club Rosarito", elo: 1280, points: 1.0, games:5.0},
-      { id: 24, name: "Ivan Salazar", club: "Club Mexicali", elo: 1250, points: 0.5, games:5.0}
+      { id: 24, name: "Ivan Salazar", club: "Club Mexicali", elo: 1250, points: 0.5, games:5.0}*/
     ];
 
     // Initialize table

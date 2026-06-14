@@ -2,13 +2,21 @@
 var events = [
     {
         id: 1,
-        title: "Torneo Apertura Grand Prix",
-        date: new Date(2026, 2, 14), // March 14, 2026
-        time: "10:00 AM - 6:00 PM",
-        description: "Torneo de apertura del Grand Prix 2026. Categorías: Sub-12, Sub-16, Absoluto. Sistema suizo a 7 rondas.",
-        location: "Centro Cultural Riviera, Ensenada"
+        title: "Torneo Apertura Blunders Festival",
+        date: new Date(2026, 5, 20), // March 14, 2026
+        time: "09:00 PM - 11:00 PM",
+        description: "Torneo de apertura del Grand Prix Blunders Festival. Sistema suizo a 5 rondas.",
+        location: "Chess.com"
     },
     {
+        id: 2,
+        title: "Torneo 2, Blunders Festival",
+        date: new Date(2026, 5, 27), // March 14, 2026
+        time: "09:00 PM - 11:00 PM",
+        description: "Segundo torneo del Grand Prix Blunders Festival. Sistema suizo a 5 rondas.",
+        location: "Chess.com"
+    },
+   /* {
         id: 2,
         title: "Simultánea con Maestro FIDE",
         date: new Date(2026, 2, 21), // March 21, 2026
@@ -79,7 +87,7 @@ var events = [
         time: "9:00 AM - 8:00 PM",
         description: "Gran final del circuito Grand Prix. Los 32 mejores clasificados compiten por el título.",
         location: "Centro de Convenciones Ensenada"
-    }
+    }*/
 ];
 
 

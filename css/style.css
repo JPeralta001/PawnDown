@@ -2,7 +2,7 @@
     --color-primary: #8C2B2B;          /* antes #296159 */
     --color-primary-dark: #732020;     /* antes #1d4a44 */
     --color-primary-light: #E57373;    /* antes #3a7d73 */
-    --color-background: #fdf2f2;       /* antes #f5f5f2 */
+    --color-background: #d9d9d9;       /* antes #f5f5f2 */
     --color-white: #ffffff;
     --color-black: #1a1a1a;
     --color-text: #333333;
@@ -150,20 +150,20 @@ body {
 .hero {
   text-align: center;
   padding: 60px 20px 40px;
-  background: linear-gradient(180deg, #f5f5f2 0%, #e8e8e5 100%);
+  background: linear-gradient(180deg, #f3f3f3 0%, #ededed 100%);
 }
 
 .hero-title {
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 2-10px;
   color: #232323;
 }
 
 .hero-subtitle {
   font-size: 16px;
   color: #555;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto 30px;
 }
 
@@ -188,6 +188,15 @@ body {
   background: #232323;
   color: #fff;
 }
+.caja{
+  width: 370px;      /* tamaño de tu contenedor */
+  height: 200px;
+  overflow: hidden;  /* recorta lo que se salga */
+}
+.caja img {
+  transform: translateY(-3px);
+  transform: translateX(-50px);
+}
 
 .btn-primary {
   background: #232323;
@@ -209,9 +218,9 @@ body {
 }
 
 .hero-image img {
-  width: 100%;
+  width: 60%;
   height: auto;
-  display: block;
+
 }
 
 /* Features Section */
@@ -293,6 +302,7 @@ body {
   font-size: clamp(2rem, 4vw, 2.5rem);
   font-weight: 800;
   margin-bottom: 25px;
+  text-align: justify;
 }
 
 .about-content p {
@@ -322,14 +332,14 @@ body {
   text-align: center;
   font-size: clamp(2rem, 4vw, 2.5rem);
   font-weight: 800;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: 40px;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -388,7 +398,9 @@ body {
   text-align: center;
   padding: 30px;
 }
-
+.aboutus{
+  text-align: justify;
+}
 /* Footer */
 .footer {
   background:#732020;

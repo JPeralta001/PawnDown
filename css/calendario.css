@@ -230,6 +230,7 @@ body {
     cursor: pointer;
     transition: var(--transition);
     position: relative;
+    max-width: 121px;
 }
 
 .calendar-day:hover {
@@ -768,6 +769,7 @@ body {
     .calendar-day {
         min-height: 50px;
         padding: 0.35rem;
+
     }
 
     .day-number {
