@@ -1,8 +1,17 @@
 
+    function normalizeText(str) {
+      return str
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase();
+    }
+    
     // Tournament participants data
     const participants = [
-      { id: 1, name: "Jose Peralta", club: "Club PawnDown", elo: 2150, points: 8.5, games:5.0},
-      { id: 2, name: "Isai Alvarez", club: "Club PawnDown", elo: 2080, points: 8.0, games:5.0},
+      { id: 1, name: "José Peralta", usuario: "Kyoumaa001", club: "PawnDown", titulo: "", elo: 1607, points: 0, games:0},
+      { id: 2, name: "Isai Alvarez", usuario: "MilkInDaShoe", club: "PawnDown", titulo: "", elo: 2001, points: 0, games:0},
+      { id: 3, name: "Carlos Jose Marin Diaz",usuario: "petoneitor", club: "Hipocampos", titulo: "", elo: 1441, points: 0, games:0},
+      { id: 4, name: "Jussep Iñaki Marquez Pineda ", usuario: "Jussep_MP", club: "Hipocampos", titulo: "", elo: 879, points: 0, games:0},
       /*{ id: 3, name: "Juan Dominguez", club: "Club Ensenada", elo: 1850, points: 7.5, games:5.0},
       { id: 4, name: "Roberto Sanchez", club: "Club Tijuana", elo: 1920, points: 7.0, games:5.0},
       { id: 5, name: "Fernando Lopez", club: "Club Ensenada", elo: 1780, points: 6.5, games:5.0},
@@ -26,6 +35,7 @@
       { id: 23, name: "Martin Aguilar", club: "Club Rosarito", elo: 1280, points: 1.0, games:5.0},
       { id: 24, name: "Ivan Salazar", club: "Club Mexicali", elo: 1250, points: 0.5, games:5.0}*/
     ];
+
 
     // Initialize table
     let currentFilter = 'all';
@@ -68,12 +78,17 @@
           </td>
           <td>
             <div class="player-info">
-              <div class="player-avatar">${getInitials(player.name)}</div>
-              <div>
-                <div class="player-name">${player.name}</div>
-                <div class="player-club">${player.club}</div>
+            <div class="player-avatar">${getInitials(player.name)}</div>
+            <div class="player-details">
+              <div class="player-name-row">
+                ${player.titulo ? `<span class="player-title">${player.titulo}</span>` : ''}
+                <span class="player-name">${player.name}</span>
               </div>
+              <div class="player-club">${player.club}</div>
+              <div class="player-username">@${player.usuario}</div>
             </div>
+          </div>
+
           </td>
           <td><span class="elo-badge">${player.elo}</span></td>
           <td><strong>${player.points}</strong></td>
@@ -92,8 +107,12 @@ function filterTable(filter, btn) {
   btn.classList.add('active');
 
   let filteredData;
-  const sorted = [...participants].sort((a, b) => b.points - a.points);
-
+  const sortedParticipants = [...participants].sort((a, b) => {
+    if (b.points !== a.points) return b.points - a.points;   // 1. Puntos
+    //if (b.games !== a.games) 
+    return b.games - a.games;       // 2. Partidas
+    //return b.elo - a.elo;                                    // 3. Elo
+  });
   switch(filter) {
     case 'top10':
       filteredData = sorted.slice(0, 10);
@@ -120,15 +139,19 @@ function filterTable(filter, btn) {
       }
       
       const player = participants.find(p => 
-        p.name.toLowerCase().includes(searchTerm)
+        normalizeText(p.name).includes(normalizeText(searchTerm))
       );
+
       
       if (player) {
         const position = participants.indexOf(player) + 1;
         
         document.getElementById('resultAvatar').textContent = getInitials(player.name);
-        document.getElementById('resultName').textContent = player.name;
+        document.getElementById('resultName').innerHTML = player.titulo
+        ? `<span class="player-title-search">${player.titulo}</span> ${player.name}`: player.name;
+
         document.getElementById('resultClub').textContent = player.club;
+        document.getElementById('resultUser').textContent = "@" + player.usuario;
         document.getElementById('resultPosition').textContent = `#${position}`;
         document.getElementById('resultElo').textContent = player.elo;
         document.getElementById('resultPoints').textContent = player.points;
@@ -139,6 +162,7 @@ function filterTable(filter, btn) {
       } else {
         document.getElementById('resultAvatar').textContent = '?';
         document.getElementById('resultName').textContent = 'Jugador no encontrado';
+        document.getElementById('resultUser').textContent = '-'; 
         document.getElementById('resultClub').textContent = 'Intenta con otro nombre';
         document.getElementById('resultPosition').textContent = '-';
         document.getElementById('resultElo').textContent = '-';
