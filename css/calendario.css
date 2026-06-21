@@ -13,7 +13,8 @@
     --color-primary: #8C2B2B;          /* antes #296159 */
     --color-primary-dark: #732020;     /* antes #1d4a44 */
     --color-primary-light: #E57373;    /* antes #3a7d73 */
-    --color-background: #fdf2f2;       /* antes #f5f5f2 */
+    --color-background: #f3f3f3;
+    --color-background-cards: #fdf2f2;          /* antes #f5f5f2 */
     --color-white: #ffffff;
     --color-black: #1a1a1a;
     --color-text: #333333;
@@ -202,7 +203,7 @@ body {
 .calendar-days-header {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    background-color: var(--color-background);
+    background-color: var(--color-background-cards);
     border-bottom: 1px solid var(--color-border);
 }
 
@@ -234,7 +235,7 @@ body {
 }
 
 .calendar-day:hover {
-    background-color: var(--color-background);
+    background-color: var(--color-background-cards);
 }
 
 .calendar-day.other-month {
@@ -367,7 +368,7 @@ body {
     align-items: flex-start;
     gap: 1.25rem;
     padding: 1.25rem;
-    background-color: var(--color-background);
+    background-color: var(--color-background-cards);
     border-radius: var(--radius-md);
     transition: var(--transition);
     cursor: pointer;

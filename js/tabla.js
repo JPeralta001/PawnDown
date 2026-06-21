@@ -12,28 +12,17 @@
       { id: 2, name: "Isai Alvarez", usuario: "MilkInDaShoe", club: "PawnDown", titulo: "", elo: 2001, points: 0, games:0},
       { id: 3, name: "Carlos Jose Marin Diaz",usuario: "petoneitor", club: "Hipocampos", titulo: "", elo: 1441, points: 0, games:0},
       { id: 4, name: "Jussep Iñaki Marquez Pineda ", usuario: "Jussep_MP", club: "Hipocampos", titulo: "", elo: 879, points: 0, games:0},
-      /*{ id: 3, name: "Juan Dominguez", club: "Club Ensenada", elo: 1850, points: 7.5, games:5.0},
-      { id: 4, name: "Roberto Sanchez", club: "Club Tijuana", elo: 1920, points: 7.0, games:5.0},
-      { id: 5, name: "Fernando Lopez", club: "Club Ensenada", elo: 1780, points: 6.5, games:5.0},
-      { id: 6, name: "Alejandro Hernandez", club: "Club Rosarito", elo: 1850, points: 6.0, games:5.0},
-      { id: 7, name: "Diego Garcia", club: "Club Mexicali", elo: 1720, points: 5.5, games:5.0},
-      { id: 8, name: "Pedro Ramirez", club: "Club Ensenada", elo: 1680, points: 5.5, games:5.0},
-      { id: 9, name: "Luis Torres", club: "Club Tijuana", elo: 1750, points: 5.0, games:5.0},
-      { id: 10, name: "Jorge Mendoza", club: "Club Rosarito", elo: 1690, points: 5.0, games:5.0},
-      { id: 11, name: "Ricardo Flores", club: "Club Ensenada", elo: 1620, points: 4.5, games:5.0},
-      { id: 12, name: "Oscar Vargas", club: "Club Mexicali", elo: 1580, points: 4.5, games:5.0},
-      { id: 13, name: "Manuel Castro", club: "Club Tijuana", elo: 1650, points: 4.0, games:5.0},
-      { id: 14, name: "Alberto Reyes", club: "Club Ensenada", elo: 1540, points: 4.0, games:5.0},
-      { id: 15, name: "Sergio Morales", club: "Club Rosarito", elo: 1600, points: 3.5, games:5.0},
-      { id: 16, name: "Andres Jimenez", club: "Club Mexicali", elo: 1520, points: 3.5, games:5.0},
-      { id: 17, name: "Pablo Ruiz", club: "Club Ensenada", elo: 1480, points: 3.0, games:5.0},
-      { id: 18, name: "Eduardo Diaz", club: "Club Tijuana", elo: 1450, points: 3.0, games:5.0},
-      { id: 19, name: "Gabriel Ortiz", club: "Club Rosarito", elo: 1420, points: 10.5, games:5.0},
-      { id: 20, name: "Raul Gutierrez", club: "Club Mexicali", elo: 1380, points: 2.0, games:5.0},
-      { id: 21, name: "Victor Navarro", club: "Club Ensenada", elo: 1350, points: 2.0, games:5.0},
-      { id: 22, name: "Hugo Espinoza", club: "Club Tijuana", elo: 1320, points: 15.5, games:5.0},
-      { id: 23, name: "Martin Aguilar", club: "Club Rosarito", elo: 1280, points: 1.0, games:5.0},
-      { id: 24, name: "Ivan Salazar", club: "Club Mexicali", elo: 1250, points: 0.5, games:5.0}*/
+      { id: 5, name: "Alejandro Eliseo Almanza Velasco", usuario: "elcapibara127", club: "Hipocampos", elo: 1148, points: 0, games:0},
+      { id: 6, name: "Giovanni Olmedo De Hoyos", usuario: "GiovanniODH", club: "PawnDown", elo: 1698, points: 0, games:0},
+      { id: 7, name: "Alejandro Ceceña Oropeza", usuario: "Geantenu", club: "BajaChess", elo: 1937, points: 0, games:0},
+      { id: 8, name: "Gael Abrajan", usuario: "GaelAbrajan", club: "PawnDown", titulo_fake: "Pequeño Cesar", elo: 1380, points: 0, games:0},
+      { id: 9, name: "Jeshua Omar Rivera López", usuario: "HijoDeHombre23", club: "Peón pasado", titulo: "", elo: 2193, points: 0, games:0},
+      { id: 10, name: "Santiago Valencia Soto", usuario: "SantiagoNomagnus", club: "Sec. 18", titulo: "", elo: 1582, points: 0, games:0},
+      { id: 11, name: "Israel Alejandro Ramos rojo ", usuario: "Rojo1998", club: "PawnDown", titulo: "", elo: 1375, points: 0, games:0},
+      { id: 12, name: "Jeremy Matias Paniagua Gomez", usuario: "JEMAT1810", club: "PawnDown", titulo: "", elo: 1569, points: 0, games:0},
+      { id: 13, name: "Ricardo Geovanny Velázquez Mendoza ", usuario: "GeovasVM", club: "", titulo: "", elo: 266, points: 0, games:0},
+      { id: 14, name: "Maicol Alexis Paniagua Gomez", usuario: "Maicolpgg", club: "PawnDown", titulo: "", elo: 1316, points: 0, games:0},
+      { id: 15, name: "Miguel Mayoral Nevárez", usuario: "culdesac7", club: "PawnDown", titulo: "", elo: 1894, points: 0, games:0},
     ];
 
 
@@ -82,6 +71,7 @@
             <div class="player-details">
               <div class="player-name-row">
                 ${player.titulo ? `<span class="player-title">${player.titulo}</span>` : ''}
+                ${player.titulo_fake ? `<span class="player-title_fake">${player.titulo_fake}</span>` : ''}
                 <span class="player-name">${player.name}</span>
               </div>
               <div class="player-club">${player.club}</div>
@@ -149,6 +139,9 @@ function filterTable(filter, btn) {
         document.getElementById('resultAvatar').textContent = getInitials(player.name);
         document.getElementById('resultName').innerHTML = player.titulo
         ? `<span class="player-title-search">${player.titulo}</span> ${player.name}`: player.name;
+
+        document.getElementById('resultName').innerHTML = player.titulo_fake
+        ? `<span class="player-title_fake_search">${player.titulo_fake}</span> ${player.name}`: player.name;
 
         document.getElementById('resultClub').textContent = player.club;
         document.getElementById('resultUser').textContent = "@" + player.usuario;
