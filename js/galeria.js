@@ -1,133 +1,13 @@
 // Gallery images data - Using Unsplash chess-related images
 var galleryImages = [
-    /*{
+    {
         id: 1,
-        src: "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=800&q=80",
-        title: "Torneo Apertura 2026",
-        description: ".",
+        src: "images/torneo1results.jpeg",
+        title: "Torneo Apertura Grand Prix Blunders Festival",
+        description: "Resultados del primer torneo",
         category: "torneos",
-        date: "15 de Enero, 2025"
-    },*/
-    /*{
-        id: 2,
-        src: "https://images.unsplash.com/photo-1560174038-da43ac74f01b?w=800&q=80",
-        title: "Concentración Total",
-        description: "Momento de máxima concentración durante la ronda decisiva.",
-        category: "torneos",
-        date: "15 de Enero, 2025"
-    },
-    {
-        id: 3,
-        src: "https://images.unsplash.com/photo-1586165368502-1bad197a6461?w=800&q=80",
-        title: "Simultánea con GM",
-        description: "El Gran Maestro invitado enfrentando a 25 jugadores locales.",
-        category: "simultaneas",
-        date: "28 de Febrero, 2025"
-    },
-    {
-        id: 4,
-        src: "https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?w=800&q=80",
-        title: "Premiación Categoría Absoluta",
-        description: "Entrega de trofeos a los ganadores del Grand Prix 2024.",
-        category: "premiaciones",
-        date: "20 de Diciembre, 2024"
-    },
-    {
-        id: 5,
-        src: "https://images.unsplash.com/photo-1604948501466-4e9c339b9c24?w=800&q=80",
-        title: "Taller de Finales",
-        description: "Sesión práctica sobre finales de torre y peón.",
-        category: "talleres",
-        date: "10 de Marzo, 2025"
-    },
-    {
-        id: 6,
-        src: "https://images.unsplash.com/photo-1538221566857-f20704e5a9e5?w=800&q=80",
-        title: "Ronda de Blitz",
-        description: "Torneo relámpago con ritmo de 3+2 minutos.",
-        category: "torneos",
-        date: "5 de Abril, 2025"
-    },
-    {
-        id: 7,
-        src: "https://images.unsplash.com/photo-1528819622765-d6bcf132f793?w=800&q=80",
-        title: "Estrategia en Acción",
-        description: "Análisis de posición durante partida clásica.",
-        category: "torneos",
-        date: "12 de Febrero, 2025"
-    },
-    {
-        id: 8,
-        src: "https://images.unsplash.com/photo-1580541832626-2a7131ee809f?w=800&q=80",
-        title: "Premiación Juvenil",
-        description: "Reconocimiento a los mejores jugadores Sub-16.",
-        category: "premiaciones",
-        date: "18 de Noviembre, 2024"
-    },
-    {
-        id: 9,
-        src: "https://images.unsplash.com/photo-1523875194681-bedd468c58bf?w=800&q=80",
-        title: "Clínica de Aperturas",
-        description: "Taller teórico sobre aperturas sicilianas.",
-        category: "talleres",
-        date: "22 de Enero, 2025"
-    },
-    {
-        id: 10,
-        src: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?w=800&q=80",
-        title: "Simultánea Infantil",
-        description: "Evento especial para categorías Sub-10 y Sub-12.",
-        category: "simultaneas",
-        date: "14 de Marzo, 2025"
-    },
-    {
-        id: 11,
-        src: "https://images.unsplash.com/photo-1559480079-d1be3ad8e33e?w=800&q=80",
-        title: "Final Emocionante",
-        description: "Último movimiento de la partida decisiva.",
-        category: "torneos",
-        date: "8 de Mayo, 2025"
-    },
-    {
-        id: 12,
-        src: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=800&q=80",
-        title: "Campeones del Grand Prix",
-        description: "Los tres primeros lugares del circuito 2024.",
-        category: "premiaciones",
-        date: "20 de Diciembre, 2024"
-    },
-    {
-        id: 13,
-        src: "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=800&q=80",
-        title: "Pensamiento Profundo",
-        description: "Momento de reflexión antes del movimiento decisivo.",
-        category: "torneos",
-        date: "3 de Junio, 2025"
-    },
-    {
-        id: 14,
-        src: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&q=80",
-        title: "Taller de Táctica",
-        description: "Ejercicios de combinaciones y sacrificios.",
-        category: "talleres",
-        date: "29 de Abril, 2025"
-    },
-    {
-        id: 15,
-        src: "https://images.unsplash.com/photo-1586165368502-1bad197a6461?w=800&q=80",
-        title: "Exhibición de Maestros",
-        description: "Partida de exhibición entre maestros FIDE.",
-        category: "simultaneas",
-        date: "17 de Julio, 2025"
-    },
-    {
-        id: 16,
-        src: "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=800&q=80",
-        title: "Torneo de Verano",
-        description: "Segunda edición del torneo estival en Ensenada.",
-        category: "torneos",
-        date: "25 de Agosto, 2025"
-    }*/
+        date: "20 de junio, 2026"
+    }
 ];
 // State
 var currentFilter = 'all';

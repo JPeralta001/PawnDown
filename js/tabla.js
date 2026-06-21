@@ -8,22 +8,26 @@
     
     // Tournament participants data
     const participants = [
-      { id: 1, name: "José Peralta", usuario: "Kyoumaa001", club: "PawnDown", titulo: "", elo: 1607, points: 0, games:0},
-      { id: 2, name: "Isai Alvarez", usuario: "MilkInDaShoe", club: "PawnDown", titulo: "", elo: 2001, points: 0, games:0},
-      { id: 3, name: "Carlos Jose Marin Diaz",usuario: "petoneitor", club: "Hipocampos", titulo: "", elo: 1441, points: 0, games:0},
-      { id: 4, name: "Jussep Iñaki Marquez Pineda ", usuario: "Jussep_MP", club: "Hipocampos", titulo: "", elo: 879, points: 0, games:0},
-      { id: 5, name: "Alejandro Eliseo Almanza Velasco", usuario: "elcapibara127", club: "Hipocampos", elo: 1148, points: 0, games:0},
-      { id: 6, name: "Giovanni Olmedo De Hoyos", usuario: "GiovanniODH", club: "PawnDown", elo: 1698, points: 0, games:0},
-      { id: 7, name: "Alejandro Ceceña Oropeza", usuario: "Geantenu", club: "BajaChess", elo: 1937, points: 0, games:0},
-      { id: 8, name: "Gael Abrajan", usuario: "GaelAbrajan", club: "PawnDown", titulo_fake: "Pequeño Cesar", elo: 1380, points: 0, games:0},
-      { id: 9, name: "Jeshua Omar Rivera López", usuario: "HijoDeHombre23", club: "Peón pasado", titulo: "", elo: 2193, points: 0, games:0},
-      { id: 10, name: "Santiago Valencia Soto", usuario: "SantiagoNomagnus", club: "Sec. 18", titulo: "", elo: 1582, points: 0, games:0},
-      { id: 11, name: "Israel Alejandro Ramos rojo ", usuario: "Rojo1998", club: "PawnDown", titulo: "", elo: 1375, points: 0, games:0},
-      { id: 12, name: "Jeremy Matias Paniagua Gomez", usuario: "JEMAT1810", club: "PawnDown", titulo: "", elo: 1569, points: 0, games:0},
-      { id: 13, name: "Ricardo Geovanny Velázquez Mendoza ", usuario: "GeovasVM", club: "", titulo: "", elo: 266, points: 0, games:0},
-      { id: 14, name: "Maicol Alexis Paniagua Gomez", usuario: "Maicolpgg", club: "PawnDown", titulo: "", elo: 1316, points: 0, games:0},
-      { id: 15, name: "Miguel Mayoral Nevárez", usuario: "culdesac7", club: "PawnDown", titulo: "", elo: 1894, points: 0, games:0},
+      {"id":1,"name":"José Peralta","usuario":"Kyoumaa001","club":"PawnDown","titulo":"","elo":1607,"points":19,"games":5},
+      {"id":2,"name":"Isai Alvarez","usuario":"MilkInDaShoe","club":"PawnDown","titulo":"","elo":2001,"points":31,"games":5},
+      {"id":3,"name":"Carlos Jose Marin Diaz","usuario":"petoneitor","club":"Hipocampos","titulo":"","elo":1441,"points":50,"games":5},
+      {"id":4,"name":"Jussep Iñaki Marquez Pineda","usuario":"Jussep_MP","club":"Hipocampos","titulo":"","elo":879,"points":2,"games":4},
+      {"id":5,"name":"Alejandro Eliseo Almanza Velasco","usuario":"elcapibara127","club":"Hipocampos","elo":1148,"points":4,"games":4},
+      {"id":6,"name":"Giovanni Olmedo De Hoyos","usuario":"GiovanniODH","club":"PawnDown","elo":1698,"points":34,"games":4},
+      {"id":7,"name":"Alejandro Ceceña Oropeza","usuario":"Geantenu","club":"BajaChess","elo":1937,"points":25,"games":5},
+      {"id":8,"name":"Gael Abrajan","usuario":"GaelAbrajan","club":"PawnDown","titulo_fake":"Pequeño Cesar","elo":1380,"points":16,"games":5},
+      {"id":9,"name":"Jeshua Omar Rivera López","usuario":"HijoDeHombre23","club":"Peón pasado","titulo":"","elo":2193,"points":2,"games":3},
+      {"id":10,"name":"Santiago Valencia Soto","usuario":"SantiagoNomagnus","club":"Sec. 18","titulo":"","elo":1582,"points":22,"games":5},
+      {"id":11,"name":"Israel Alejandro Ramos rojo","usuario":"Rojo1998","club":"PawnDown","titulo":"","elo":1375,"points":0,"games":0},
+      {"id":12,"name":"Jeremy Matias Paniagua Gomez","usuario":"JEMAT1810","club":"PawnDown","titulo":"","elo":1569,"points":28,"games":5},
+      {"id":13,"name":"Ricardo Geovanny Velázquez Mendoza","usuario":"GeovasVM","club":"","titulo":"","elo":266,"points":10,"games":1},
+      {"id":14,"name":"Maicol Alexis Paniagua Gomez","usuario":"Maicolpgg","club":"PawnDown","titulo":"","elo":1316,"points":2,"games":3},
+      {"id":15,"name":"Miguel Mayoral Nevárez","usuario":"culdesac7","club":"PawnDown","titulo":"","elo":1894,"points":40,"games":4},
+      {"id":16,"name":"Fernando Cabrera","usuario":"Dudiyack","club":"PawnDown","titulo":"","elo":2013,"points":7,"games":5},
+      {"id":17,"name":"Alvaro Casco","usuario":"Alvareiruz","club":"E2E4","titulo":"","elo":2024,"points":37,"games":5},
+      {"id":18,"name":"Aldair Gonzalez","usuario":"Aldair161103","club":"PawnDown","titulo":"","elo":2008,"points":13,"games":4}
     ];
+
 
 
     // Initialize table
