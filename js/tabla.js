@@ -22,7 +22,7 @@
       {"id":12,"name":"Jeremy Matias Paniagua Gomez","usuario":"JEMAT1810","club":"PawnDown","titulo":"","elo":1569,"points":28,"games":5},
       {"id":13,"name":"Ricardo Geovanny Velázquez Mendoza","usuario":"GeovasVM","club":"","titulo":"","elo":266,"points":10,"games":1},
       {"id":14,"name":"Maicol Alexis Paniagua Gomez","usuario":"Maicolpgg","club":"PawnDown","titulo":"","elo":1316,"points":2,"games":3},
-      {"id":15,"name":"Miguel Mayoral Nevárez","usuario":"culdesac7","club":"PawnDown","titulo":"","elo":1894,"points":40,"games":4},
+      {"id":15,"name":"Miguel Mayoral Nevárez","usuario":"culdesac7","club":"PawnDown","titulo":"","elo":1894,"points":50,"games":4},
       {"id":16,"name":"Fernando Cabrera","usuario":"Dudiyack","club":"PawnDown","titulo":"","elo":2013,"points":7,"games":5},
       {"id":17,"name":"Alvaro Casco","usuario":"Alvareiruz","club":"E2E4","titulo":"","elo":2024,"points":37,"games":5},
       {"id":18,"name":"Aldair Gonzalez","usuario":"Aldair161103","club":"PawnDown","titulo":"","elo":2008,"points":13,"games":4}
